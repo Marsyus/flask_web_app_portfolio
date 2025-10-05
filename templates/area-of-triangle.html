@@ -12,7 +12,6 @@
                     <buttonh onclick="goToHome()">Home</buttonh>
                     <buttonh onclick="goToProfile()">Profile</buttonh>
                     <buttonh onclick="goToWorks()">Programming Works</buttonh>
-                    <hr>
                 </nav>
             </div>
         </header>
@@ -20,12 +19,12 @@
         <main>
             <h3>Calculate Area of Triangle</h3>
             <form action="/area-of-triangle.html" method="POST">
-                <label for="inputWidth">Enter Width </label>
-                <input type="number" name="inputWidth" id="inputWidth">
+                <label for="inputBase">Enter Base </label>
+                <input type="number" name="inputBase" id="inputBase">
                 <br>
                 <label for="inputHeight">Enter Height</label>
                 <input type="number" name="inputHeight" id="inputHeight">
-                <br><input type="submit" value="Convert">
+                <br><input type="submit" value="Calculate">
             </form>
 
             {% if result %}

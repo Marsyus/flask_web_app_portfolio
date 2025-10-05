@@ -55,9 +55,9 @@ def area_of_triangle():
     result, error = None, None
     if request.method == 'POST':
         try:
-            input_width = float(request.form.get('inputWidth', 0))
+            input_base = float(request.form.get('inputBase', 0))
             input_height = float(request.form.get('inputHeight', 0))
-            result = input_width * input_height * 1/2
+            result = input_base * input_height * 1/2
         except ValueError:
             error = "Invalid input. Please enter a number."
     return render_template('area-of-triangle.html', result=result, error=error)
