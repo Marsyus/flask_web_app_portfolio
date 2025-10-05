@@ -4,6 +4,21 @@
         <title>Area of Triangle</title>
     </head>
     <body>
-        <p>Insert Area of Triangle</p>
+        <form action="/area-of-triangle.html" method="POST">
+            <label for="inputWidth">Enter Width </label>
+            <input type="number" name="inputWidth" id="inputWidth">
+            <br>
+            <label for="inputHeight">Enter Height</label>
+            <input type="number" name="inputHeight" id="inputHeight">
+            <br><input type="submit" value="Convert">
+        </form>
+
+        {% if result %}
+        <p>Area of Triangle: {{ result }}</p>
+        {% endif %}
+
+        {% if error %}
+        <p>{{ error }}</p>
+        {% endif %}
     </body>
 </html>
