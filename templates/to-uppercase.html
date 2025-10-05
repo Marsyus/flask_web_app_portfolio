@@ -4,6 +4,17 @@
         <title>Convert to Uppercase</title>
     </head>
     <body>
+        <header>
+            <h1>Convert to Uppercase</h1>
+
+            <nav>
+                <button onclick="goToHome()">Home</button>
+                <button onclick="goToProfile()">Profile</button>
+                <button onclick="goToWorks()">Programming Works</button>
+                <hr>
+            </nav>
+        </header>
+
         <form action="/to-uppercase.html" method="post">
             <label for="inputString">Enter a String:</label>
             <input type="text" name="inputString" id="inputString">
@@ -13,5 +24,7 @@
         {% if result %}
         <p>Converted String: {{ result }}</p>
         {% endif %}
+        
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>

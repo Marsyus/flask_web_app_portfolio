@@ -4,6 +4,17 @@
         <title>Profile</title>
     </head>
     <body>
+        <header>
+            <h1>Profile</h1>
+
+            <nav>
+                <button onclick="goToHome()">Home</button>
+                <button onclick="goToProfile()">Profile</button>
+                <button onclick="goToWorks()">Programming Works</button>
+                <hr>
+            </nav>
+        </header>
         <h3>Insert Profile</h3>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>

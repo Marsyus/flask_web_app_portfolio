@@ -4,6 +4,17 @@
         <title>Area of Triangle</title>
     </head>
     <body>
+        <header>
+            <h1>Area of Triangle</h1>
+
+            <nav>
+                <button onclick="goToHome()">Home</button>
+                <button onclick="goToProfile()">Profile</button>
+                <button onclick="goToWorks()">Programming Works</button>
+                <hr>
+            </nav>
+        </header>
+
         <form action="/area-of-triangle.html" method="POST">
             <label for="inputWidth">Enter Width </label>
             <input type="number" name="inputWidth" id="inputWidth">
@@ -20,5 +31,7 @@
         {% if error %}
         <p>{{ error }}</p>
         {% endif %}
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>

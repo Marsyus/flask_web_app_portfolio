@@ -4,6 +4,17 @@
         <title>Area of Circle</title>
     </head>
     <body>
+        <header>
+            <h1>Area of Circle</h1>
+
+            <nav>
+                <button onclick="goToHome()">Home</button>
+                <button onclick="goToProfile()">Profile</button>
+                <button onclick="goToWorks()">Programming Works</button>
+                <hr>
+            </nav>
+        </header>
+
         <form action="/area-of-circle.html" method="POST">
             <label for="inputRadius">Enter Radius</label>
             <input type="number" name="inputRadius" id="inputRadius">
@@ -17,5 +28,7 @@
         {% if error %}
         <p>{{ error }}</p>
         {% endif %}
+
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>

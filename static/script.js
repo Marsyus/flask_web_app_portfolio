@@ -1,3 +1,7 @@
+function goToHome() {
+    window.location.href = "/";
+}
+
 function goToProfile() {
     window.location.href = "/profile.html";
 }
