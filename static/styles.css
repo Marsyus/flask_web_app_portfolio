@@ -1,0 +1,28 @@
+header {
+    padding: 0px;
+    text-align: center;
+}
+
+div {
+    background-color: #000000c0;
+    padding: 0px;
+    text-align: left;
+}
+
+button {
+    background-color: #00000000;
+    border: none;
+    color: white;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #000000c0;
+}

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
         <title>Convert to Uppercase</title>
     </head>
     <body>
         <header>
             <h1>Convert to Uppercase</h1>
-
-            <nav>
-                <button onclick="goToHome()">Home</button>
-                <button onclick="goToProfile()">Profile</button>
-                <button onclick="goToWorks()">Programming Works</button>
-                <hr>
-            </nav>
+            <div>
+                <nav>
+                    <button onclick="goToHome()">Home</button>
+                    <button onclick="goToProfile()">Profile</button>
+                    <button onclick="goToWorks()">Programming Works</button>
+                    <hr>
+                </nav>
+            </div>
         </header>
         <main>
             <h3>Convert a String to Uppercase</h3>

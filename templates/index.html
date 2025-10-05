@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
         <title>Home Page</title>
     </head>
     <body>
         <header>
             <h1>Hello!! Welcome to my Website!!</h1>
-
-            <nav>
-                <button onclick="goToHome()">Home</button>
-                <button onclick="goToProfile()">Profile</button>
-                <button onclick="goToWorks()">Programming Works</button>
-                <hr>
-            </nav>
+            <div>
+                <nav>
+                    <button onclick="goToHome()">Home</button>
+                    <button onclick="goToProfile()">Profile</button>
+                    <button onclick="goToWorks()">Programming Works</button>
+                    <hr>
+                </nav>
+            </div>
         </header>
         <main>
             <h3>This is the Home Page</h3>
