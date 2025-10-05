@@ -8,19 +8,19 @@ app = Flask(__name__)
 # HOME
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('index.html', header_title="Home Page")
 
 
 # PROFILE
 @app.route('/profile.html')
 def profile():
-    return render_template('profile.html')
+    return render_template('profile.html', header_title="Profile")
 
 
 # PROGRAMMING WORKS
 @app.route('/works.html')
 def works():
-    return render_template('works.html')
+    return render_template('works.html', header_title="Programming Works")
 
 
 # TO UPPERCASE
@@ -33,7 +33,7 @@ def to_uppercase():
             result = input_string.upper()
         except ValueError:
             result = "Invalid input. Please enter a string."
-    return render_template('to-uppercase.html', result=result)
+    return render_template('to-uppercase.html', result=result, header_title="Convert to Uppercase")
 
 
 # AREA OF CIRCLE
@@ -46,7 +46,7 @@ def area_of_circle():
             result = pi * input_radius ** 2
         except ValueError:
             error = "Invalid input. Please enter a number."
-    return render_template('area-of-circle.html', result=result, error=error)
+    return render_template('area-of-circle.html', result=result, error=error, header_title="Area of Circle")
 
 
 # AREA OF TRIANGLE
@@ -60,7 +60,7 @@ def area_of_triangle():
             result = input_base * input_height * 1/2
         except ValueError:
             error = "Invalid input. Please enter a number."
-    return render_template('area-of-triangle.html', result=result, error=error)
+    return render_template('area-of-triangle.html', result=result, error=error, header_title="Area of Triangle")
 
 
 if __name__ == '__main__':

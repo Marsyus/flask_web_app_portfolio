@@ -5,16 +5,8 @@
         <title>Convert to Uppercase</title>
     </head>
     <body>
-        <header>
-            <h1>Convert to Uppercase</h1>
-            <div>
-                <nav>
-                    <buttonh onclick="goToHome()">Home</buttonh>
-                    <buttonh onclick="goToProfile()">Profile</buttonh>
-                    <buttonh onclick="goToWorks()">Programming Works</buttonh>
-                </nav>
-            </div>
-        </header>
+        <!--Header-->
+        {% include 'header.html' %}
         <main>
             <h3>Convert a String to Uppercase</h3>
             <form action="/to-uppercase.html" method="post">

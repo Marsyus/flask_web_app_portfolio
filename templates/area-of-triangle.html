@@ -5,17 +5,8 @@
         <title>Area of Triangle</title>
     </head>
     <body>
-        <header>
-            <h1>Area of Triangle</h1>
-            <div>
-                <nav>
-                    <buttonh onclick="goToHome()">Home</buttonh>
-                    <buttonh onclick="goToProfile()">Profile</buttonh>
-                    <buttonh onclick="goToWorks()">Programming Works</buttonh>
-                </nav>
-            </div>
-        </header>
-
+        <!--Header-->
+        {% include 'header.html' %}
         <main>
             <h3>Calculate Area of Triangle</h3>
             <form action="/area-of-triangle.html" method="POST">

@@ -5,16 +5,8 @@
         <title>Home Page</title>
     </head>
     <body>
-        <header>
-            <h1>Hello!! Welcome to my Website!!</h1>
-            <div>
-                <nav>
-                    <buttonh onclick="goToHome()">Home</buttonh>
-                    <buttonh onclick="goToProfile()">Profile</buttonh>
-                    <buttonh onclick="goToWorks()">Programming Works</buttonh>
-                </nav>
-            </div>
-        </header>
+        <!--Header-->
+        {% include 'header.html' %}
         <main>
             <h3>This is the Home Page</h3>
             <p>This is a simple web application built using Flask. You can navigate to different sections using the buttons above.</p>
