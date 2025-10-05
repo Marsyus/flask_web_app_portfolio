@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request 
+from math import pi
 
 app = Flask(__name__)
 
@@ -28,6 +29,18 @@ def to_uppercase():
         except ValueError:
             result = "Invalid input. Please enter a string."
     return render_template('to-uppercase.html', result=result)
+
+# AREA OF CIRCLE
+@app.route('/area-of-circle.html', methods=['GET', 'POST'])
+def area_of_circle():
+    result, error = None, None
+    if request.method == 'POST':
+        try:
+            input_radius = float(request.form.get('inputRadius', 0))
+            result = pi * input_radius ** 2
+        except ValueError:
+            error = "Invalid input. Please enter a number."
+    return render_template('area-of-circle.html', result=result, error=error)
 
 if __name__ == '__main__':
     app.run(debug=True)
