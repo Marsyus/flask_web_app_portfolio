@@ -4,6 +4,14 @@
         <title>Convert to Uppercase</title>
     </head>
     <body>
-        <p>Insert Uppercase</p>
+        <form action="/to-uppercase" method="post">
+            <label for="inputString">Enter a String:</label>
+            <input type="text" name="inputString" id="inputString">
+            <input type="submit" value="Convert">
+        </form>
+
+        {% if result %}
+        <p>Converted String: {{ result }}</p>
+        {% endif %}
     </body>
 </html>

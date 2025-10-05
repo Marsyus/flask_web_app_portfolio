@@ -17,5 +17,17 @@ def profile():
 def works():
     return render_template('works.html')
 
+# TO UPPERCASE
+@app.route('/to-uppercase.html', methods=['GET', 'POST'])
+def to_uppercase():
+    result = None
+    if request.method == 'POST':
+        try:
+            input_string = request.form.get('inputString', '')
+            result = input_string.upper()
+        except ValueError:
+            result = "Invalid input. Please enter a string."
+    return render_template('to-uppercase.html', result=result)
+
 if __name__ == '__main__':
     app.run(debug=True)
