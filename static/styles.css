@@ -9,20 +9,21 @@ div {
     text-align: left;
 }
 
-button {
+buttonh {
     background-color: #00000000;
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.808);
     padding: 3px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'sans-serif';
     font-size: 16px;
     margin: 0px 0px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-button:hover {
+buttonh:hover {
     background-color: #000000c0;
 }
