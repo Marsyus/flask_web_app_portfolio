@@ -17,6 +17,12 @@ def profile():
     return render_template('profile.html', header_title="Profile")
 
 
+# CONTACT
+@app.route('/contact.html')
+def contact():
+    return render_template('contact.html', header_title="Contact")
+
+
 # PROGRAMMING WORKS
 @app.route('/works.html')
 def works():
