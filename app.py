@@ -12,5 +12,10 @@ def home():
 def profile():
     return render_template('profile.html')
 
+# PROGRAMMING WORKS
+@app.route('/works.html')
+def works():
+    return render_template('works.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
