@@ -1,4 +1,9 @@
 header {
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     padding: 0px;
     text-align: center;
 }
@@ -7,6 +12,19 @@ div {
     background-color: #000000c0;
     padding: 0px;
     text-align: left;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #000000;
+    font-family: 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin-top: 70px;
+    padding: 20px;
 }
 
 buttonh {
