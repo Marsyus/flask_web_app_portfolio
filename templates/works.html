@@ -7,11 +7,22 @@
     <body>
         <!--Header-->
         {% include 'header.html' %}
-        <main>
+        <main class="works-main">
             <h3>Choose a Programming Work</h3>
-            <br><button onclick="goToUppercase()">Convert String into Uppercase</button>
-            <br><button onclick="goToAreaOfCircle()">Area of a Circle</button>
-            <br><button onclick="goToAreaOfTriangle()">Area of a Triangle</button>
+            <div class="works-buttons">
+                <div onclick="goToUppercase()">
+                    Convert into Uppercase
+                    <img src="/static/images/works_1.png" alt="Convert String into Uppercase">
+                </div>
+                <div onclick="goToAreaOfCircle()">
+                    Area of a Circle
+                    <img src="/static/images/works_2.png" alt="Area of a Circle">
+                </div>
+                <div onclick="goToAreaOfTriangle()">
+                    Area of a Triangle
+                    <img src="/static/images/works_3.png" alt="Area of a Triangle">
+                </div>                
+            </div>
         </main>
         
         <script src="{{ url_for('static', filename='script.js') }}"></script>
