@@ -8,11 +8,18 @@
         <!--Header-->
         {% include 'header.html' %}
         <main>
-            <p>Name: Marxius Ivan Adolf Denniel</p>
-            <p>Age: 19</p>
-            <p>Course: Bachelor of Science in Computer Engineering</p>
-            <p>Hobbies: Playing Video Games, Reading Manga, Watching Anime</p>
-            <p>Ambition: To become a successful software developer and contribute to innovative tech solutions.</p>
+            <div class="profile-pic">
+                <div>
+                    <img src="/static/images/marxius.png" alt=""> 
+                </div>
+            </div>
+            <div class="profile">
+                <p>Name: Marxius Ivan Adolf Denniel</p>
+                <p>Age: 19</p>
+                <p>Course: Bachelor of Science in Computer Engineering</p>
+                <p>Hobbies: Playing Video Games, Reading Manga, Watching Anime</p>
+                <p>Ambition: To become a successful software developer and contribute to innovative tech solutions.</p>
+            </div>
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
