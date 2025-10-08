@@ -68,8 +68,11 @@ header {
 
 /* Body */
 body {
-    background-color: #202020;
-    color: hsl(0, 0%, 0%);
+    background-image: url('/static/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: 'sans-serif';
     margin: 0px;
     padding: 0px;
