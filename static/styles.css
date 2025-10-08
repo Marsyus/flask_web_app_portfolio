@@ -1,3 +1,4 @@
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,16 @@ header {
     align-items: center;
 }
 
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo p {
+    color: rgb(212, 212, 212)
+}
+
 .header-logo img {
     display: inline-flex;
     align-items: left;
@@ -34,40 +45,6 @@ header {
     display: inline-flex;
     align-items: right;
     padding: 0px 10px;
-}
-
-body {
-    background-color: #202020;
-    color: hsl(0, 0%, 0%);
-    font-family: 'sans-serif';
-    margin: 0px;
-    padding: 0px;
-}
-
-main {
-    font-size: 20px;
-    margin-top: 40px;
-    padding: 20px;
-    color: rgb(226, 225, 224);
-    text-align: center;
-}
-
-.profile-pic {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-}
-
-.profile-pic img {
-    position: relative;
-    max-width: 150px;
-    border-radius: 50%;
-    border: 2px solid rgb(201, 201, 201);
-    z-index: 2;
-    background-clip: content-box;
 }
 
 .nav-buttons button {
@@ -89,6 +66,108 @@ main {
     background-color: #000000c0;
 }
 
+/* Body */
+body {
+    background-color: #202020;
+    color: hsl(0, 0%, 0%);
+    font-family: 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Main */
+main {
+    font-size: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    color: rgb(226, 225, 224);
+    text-align: center;
+}
+
+/* Profile */
+.profile-main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+
+}
+
+.about-me {
+    background: linear-gradient(135deg, #000000, #303030);
+    color: rgb(212, 212, 212);
+    padding: 10px 20px;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 50px;
+    width: 300px;
+    height: 350px;
+    align-self: center;
+}
+
+.about-me p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.profile-div {
+    background: linear-gradient(135deg, #000000, #303030);
+    color: rgb(212, 212, 212);
+    padding: 10px 20px;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 50px;
+    width: 500px;
+    height: 600px;
+    align-self: center;
+}
+
+.profile div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.profile-pic {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.profile-pic img {
+    position: relative;
+    max-width: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(201, 201, 201);
+    z-index: 2;
+    background-clip: content-box;
+}
+
+.skills {
+    background: linear-gradient(135deg, #000000, #303030);
+    color: rgb(212, 212, 212);
+    padding: 10px 20px;
+    font-family: 'sans-serif';
+    font-size: 20px;
+    margin: 20px auto;
+    border-radius: 50px;
+    width: 300px;
+    height: 350px;
+    align-self: center;
+}
+
+.skills p {
+    text-align: left;
+    margin: 10px;
+}
+
+/* Works */
 .works-main {
     display: grid;
     align-items: center;

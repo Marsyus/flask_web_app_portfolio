@@ -8,17 +8,45 @@
         <!--Header-->
         {% include 'header.html' %}
         <main>
-            <div class="profile-pic">
-                <div>
-                    <img src="/static/images/marxius.png" alt="">
+            <div class="profile-main">
+                <div class="about-me">
+                    <h3>About Me</h3>
+                    <p>
+                        My name is Marxius Ivan Adolf Denniel, a 19 year old 2nd year student from Polytechnic University of the Philippines under the course Bachelor of Science in Computer Engineering. In my free time, I enjoy reading manga, watching movies or anime, and playing video games with my friends.
+                    </p>
                 </div>
-            </div>
-            <div class="profile">
-                <p>Name: Marxius Ivan Adolf Denniel</p>
-                <p>Age: 19</p>
-                <p>Course: Bachelor of Science in Computer Engineering</p>
-                <p>Hobbies: Playing Video Games, Reading Manga, Watching Anime</p>
-                <p>Ambition: To become a successful software developer and contribute to innovative tech solutions.</p>
+                <div class="profile-div">
+                    <div class="profile-pic">
+                        <div>
+                            <img src="/static/images/marxius.png" alt="">
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <h4>Marxius Ivan Adolf Denniel O. Lomboy</h4>
+                        <div>
+                            <p>Age : 19</p>
+                            <p>Birthdate : 09/17/2006</p>
+                        </div>
+                        <div>
+                            <p>Sex : Male</p>
+                            <p>Status : Single</p>
+                        </div>
+                        <u>2024-01460-MN-0</u>
+                        <p>Bachelor of Science in Computer Engineering</p>
+                        <p>Polytechnic University of the Philippines</p>
+                        <i>
+                            "There is no Prize to Perfection, Only an End to Pursuit"
+                        </i>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <p>- Full Stack Web Development</p>
+                    <p>- Advanced-Level Python Programming</p>
+                    <p>- Average-Level HTML Programming</p>
+                    <p>- Beginner-Level JavaScript Programming</p>
+                    <p>- Beginner-Level C++ Programming</p>
+                </div>
             </div>
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
