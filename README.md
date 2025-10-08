@@ -5,7 +5,7 @@ This project is a simple but interactive website built with **Flask**, **HTML**,
 ---
 
 ## Project Structure
-
+```
 flask_web_app_portfolio/
 │
 ├── static/
@@ -42,7 +42,7 @@ flask_web_app_portfolio/
 │
 ├── app.py                 # Flask backend and routing logic
 └── README.md              # Project documentation
-
+```
 
 ## Installation guide
 
