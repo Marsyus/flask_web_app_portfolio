@@ -7,11 +7,22 @@
     <body>
         <!--Header-->
         {% include 'header.html' %}
-        <main>
-            <h3>This is the Home Page</h3>
-            <p>This is a simple web application built using Flask. You can navigate to different sections using the buttons above.</p>
+        <main class="home-main">
+            <h3>Welcome to my Website!!</h3>
+            <p>This is a simple web application built using Flask dedicated to sir Avena Godofredo under the subject Data Structures and Algorithms.</p>
+            <p>Thank you for visiting!</p>
+            <div class="home-buttons">
+                <div onclick="goToProfile()">
+                    Know More About Me
+                </div>
+                <div onclick="goToContact()">
+                    Contact Me
+                </div>
+                <div onclick="goToWorks()">
+                    Visit my Works
+                </div>                
+            </div>
         </main>
-        
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>
 </html>
