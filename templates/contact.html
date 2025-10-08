@@ -7,8 +7,26 @@
     <body>
         <!--Header-->
         {% include 'header.html' %}
-        <main>
+        <main class="contact-main">
             <h3>Contact Me</h3>
+            <div class="contact-buttons">
+                <div onclick="goToFacebook()">
+                    Facebook
+                    <img src="/static/images/facebook.png" alt="Facebook">
+                </div>
+                <div onclick="goToGmail()">
+                    GMail
+                    <img src="/static/images/gmail.png" alt="Gmail">
+                </div>
+                <div onclick="goToGitHub()">
+                    GitHub
+                    <img src="/static/images/github.png" alt="GitHub">
+                </div>
+                <div onclick="goToLinkedIn()">
+                    LinkedIn
+                    <img src="/static/images/linkedin.png" alt="LinkedIn">
+                </div>                
+            </div>
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
 </html>
