@@ -14,10 +14,11 @@
                 <input type="text" name="inputString" id="inputString">
                 <input type="submit" value="Convert">
             </form>
-
+            
             {% if result %}
             <p>Converted String: {{ result }}</p>
             {% endif %}
+            
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>
     </body>

@@ -31,11 +31,13 @@
                 </div>
             </div>
             <div id="rps-result">
+
                 {% if result %}
                     <p>You chose : {{ player }}</p>
                     <p>Your opponent chose : {{ opponent }}</p>
                     <h3>{{ result }}</h3>
                 {% endif %}
+                
             </div>
         </main>
         <script src="{{ url_for('static', filename='script.js') }}"></script>

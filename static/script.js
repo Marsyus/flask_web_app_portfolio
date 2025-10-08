@@ -6,13 +6,13 @@ function goToHome() {
 
 // Profile navigation
 function goToProfile() {
-    window.location.href = "/profile.html";
+    window.location.href = "/profile";
 }
 
 
 // Contact navigation
 function goToContact() {
-    window.location.href = "/contact.html";
+    window.location.href = "/contact";
 }
 
 
@@ -42,34 +42,35 @@ function goToLinkedIn() {
 
 // Works navigation
 function goToWorks() {
-    window.location.href = "/works.html"
+    window.location.href = "/works"
 }
 
 
 // Convert to Uppercase navigation
 function goToUppercase() {
-    window.location.href = "/to-uppercase.html";
+    window.location.href = "/to-uppercase";
 }
 
 
 // Area of Circle navigation
 function goToAreaOfCircle() {
-    window.location.href = "/area-of-circle.html";
+    window.location.href = "/area-of-circle";
 }
 
 
 // Area of Triangle navigation
 function goToAreaOfTriangle() {
-    window.location.href = "/area-of-triangle.html";
+    window.location.href = "/area-of-triangle";
 }
 
 
 // Rock Paper Scissors navigation
 function goToRPS() {
-    window.location.href = "/rock-paper-scissors.html";
+    window.location.href = "/rock-paper-scissors";
 }
+
 
 // Rock Paper Scissors mechanics
 function rps(choice) {
-    window.location.href = `/rock-paper-scissors.html?choice=${choice}`;
+    window.location.href = `/rock-paper-scissors?choice=${choice}`;
 }

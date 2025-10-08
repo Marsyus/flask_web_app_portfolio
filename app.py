@@ -13,25 +13,25 @@ def home():
 
 
 # PROFILE
-@app.route('/profile.html')
+@app.route('/profile')
 def profile():
     return render_template('profile.html', header_title="Profile")
 
 
 # CONTACT
-@app.route('/contact.html')
+@app.route('/contact')
 def contact():
     return render_template('contact.html', header_title="Contact")
 
 
 # PROGRAMMING WORKS
-@app.route('/works.html')
+@app.route('/works')
 def works():
     return render_template('works.html', header_title="Programming Works")
 
 
 # TO UPPERCASE
-@app.route('/to-uppercase.html', methods=['GET', 'POST'])
+@app.route('/to-uppercase', methods=['GET', 'POST'])
 def to_uppercase():
     result = None
     if request.method == 'POST':
@@ -40,11 +40,14 @@ def to_uppercase():
             result = input_string.upper()
         except ValueError:
             result = "Invalid input. Please enter a string."
-    return render_template('to-uppercase.html', result=result, header_title="Convert to Uppercase")
+    return render_template('to-uppercase.html', 
+                           result=result, 
+                           header_title="Convert to Uppercase"
+                           )
 
 
 # AREA OF CIRCLE
-@app.route('/area-of-circle.html', methods=['GET', 'POST'])
+@app.route('/area-of-circle', methods=['GET', 'POST'])
 def area_of_circle():
     result, error = None, None
     if request.method == 'POST':
@@ -53,11 +56,15 @@ def area_of_circle():
             result = pi * input_radius ** 2
         except ValueError:
             error = "Invalid input. Please enter a number."
-    return render_template('area-of-circle.html', result=result, error=error, header_title="Area of Circle")
+    return render_template('area-of-circle.html', 
+                           result=result, 
+                           error=error, 
+                           header_title="Area of Circle"
+                           )
 
 
 # AREA OF TRIANGLE
-@app.route('/area-of-triangle.html', methods=['GET', 'POST'])
+@app.route('/area-of-triangle', methods=['GET', 'POST'])
 def area_of_triangle():
     result, error = None, None
     if request.method == 'POST':
@@ -67,11 +74,15 @@ def area_of_triangle():
             result = input_base * input_height * 1/2
         except ValueError:
             error = "Invalid input. Please enter a number."
-    return render_template('area-of-triangle.html', result=result, error=error, header_title="Area of Triangle")
+    return render_template('area-of-triangle.html', 
+                           result=result, 
+                           error=error, 
+                           header_title="Area of Triangle"
+                           )
 
 
 # ROCK PAPER SCISSORS 
-@app.route('/rock-paper-scissors.html')
+@app.route('/rock-paper-scissors')
 def rock_paper_scissors():
     player = request.args.get('choice')
     opponent = None
@@ -96,7 +107,14 @@ def rock_paper_scissors():
     with open('static/score.txt', 'w') as scr:
         scr.write(f"{player_scr},{opponent_scr}")
 
-    return render_template('rock-paper-scissors.html', player=player, opponent=opponent, player_scr=player_scr, opponent_scr=opponent_scr, result=result, header_title="Rock Paper Scissors")
+    return render_template('rock-paper-scissors.html', 
+                           player=player, 
+                           opponent=opponent, 
+                           player_scr=player_scr, 
+                           opponent_scr=opponent_scr, 
+                           result=result, 
+                           header_title="Rock Paper Scissors"
+                           )
 
 
 if __name__ == '__main__':
