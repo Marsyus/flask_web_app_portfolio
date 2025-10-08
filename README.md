@@ -5,7 +5,7 @@ This project is a simple but interactive website built with **Flask**, **HTML**,
 ---
 
 ## Project Structure
-
+```
 flask_web_app_portfolio/
 │
 ├── static/
@@ -28,7 +28,6 @@ flask_web_app_portfolio/
 │   ├── script.js          # Handles path navigation
 │   └── styles.css         # Main stylesheet
 │   
-│
 ├── templates/
 │   ├── area-of-circle.html         # Area of Circle
 │   ├── area-of-triangle.html       # Area of Triangle
@@ -42,20 +41,22 @@ flask_web_app_portfolio/
 │
 ├── app.py                 # Flask backend and routing logic
 └── README.md              # Project documentation
-
+```
 
 ## Installation guide
 
 Follow these steps to run the project on your local machine:
 
 1. **Clone the Repository**
+    ```
     bash
     git clone https://github.com/Marsyus/flask_web_app_portfolio
     cd flask_web_app_portfolio
+    ```
 2. **Install Flask**
-    pip install flask
+    ```pip install flask```
 3. **Run the App**
-    python app.py
+    ```python app.py```
 4. **Open in Browser**
-    https://127.0.0.1:5000
+    ```https://127.0.0.1:5000```
     
