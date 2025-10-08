@@ -28,7 +28,6 @@ flask_web_app_portfolio/
 │   ├── script.js          # Handles path navigation
 │   └── styles.css         # Main stylesheet
 │   
-│
 ├── templates/
 │   ├── area-of-circle.html         # Area of Circle
 │   ├── area-of-triangle.html       # Area of Triangle
