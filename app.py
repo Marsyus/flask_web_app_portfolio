@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request 
 from math import pi
+import random
 
 
 app = Flask(__name__)
@@ -67,6 +68,35 @@ def area_of_triangle():
         except ValueError:
             error = "Invalid input. Please enter a number."
     return render_template('area-of-triangle.html', result=result, error=error, header_title="Area of Triangle")
+
+
+# ROCK PAPER SCISSORS 
+@app.route('/rock-paper-scissors.html')
+def rock_paper_scissors():
+    player = request.args.get('choice')
+    opponent = None
+    result = None
+    with open('static/score.txt', 'r') as scr:
+        scores = scr.read()
+        player_scr, opponent_scr = map(int, scores.split(','))
+
+    if player:
+        opponent = random.choice(['rock', 'paper', 'scissors'])
+        if player == opponent:
+            result = "It's a tie!"
+        elif (player == 'rock' and opponent == 'scissors') or \
+            (player == 'paper' and opponent == 'rock') or \
+            (player == 'scissors' and opponent == 'paper'):
+            result = "You won!"
+            player_scr += 1
+        else:
+            result = "You lost!"
+            opponent_scr += 1
+
+    with open('static/score.txt', 'w') as scr:
+        scr.write(f"{player_scr},{opponent_scr}")
+
+    return render_template('rock-paper-scissors.html', player=player, opponent=opponent, player_scr=player_scr, opponent_scr=opponent_scr, result=result, header_title="Rock Paper Scissors")
 
 
 if __name__ == '__main__':

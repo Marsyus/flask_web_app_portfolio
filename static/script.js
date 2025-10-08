@@ -62,3 +62,14 @@ function goToAreaOfCircle() {
 function goToAreaOfTriangle() {
     window.location.href = "/area-of-triangle.html";
 }
+
+
+// Rock Paper Scissors navigation
+function goToRPS() {
+    window.location.href = "/rock-paper-scissors.html";
+}
+
+// Rock Paper Scissors mechanics
+function rps(choice) {
+    window.location.href = `/rock-paper-scissors.html?choice=${choice}`;
+}

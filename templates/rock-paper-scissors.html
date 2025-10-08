@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
+        <!--Header-->
+        {% include 'header.html' %}
+        <main class="rps-main">
+            <h3>Pick a Hand</h3>
+            <div class="rps-buttons">
+                <div onclick="rps('rock')">
+                    Rock
+                    <img src="/static/images/rock.png" alt="Rock">
+                </div>
+                <div onclick="rps('paper')">
+                    Paper
+                    <img src="/static/images/paper.png" alt="Paper">
+                </div>
+                <div onclick="rps('scissors')">
+                    Scissors
+                    <img src="/static/images/scissors.png" alt="Scissors">
+                </div>                
+            </div>
+            <div class="rps-scoreboard">
+                <h3>Scoreboard</h3>
+                <div id="scoreboard">
+                    <p id="player-score">Player: {{ player_scr }}</p>
+                    <p id="opponent-score">Opponent: {{ opponent_scr }}</p>
+                </div>
+            </div>
+            <div id="rps-result">
+                {% if result %}
+                    <p>You chose : {{ player }}</p>
+                    <p>Your opponent chose : {{ opponent }}</p>
+                    <h3>{{ result }}</h3>
+                {% endif %}
+            </div>
+        </main>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
+</html>
